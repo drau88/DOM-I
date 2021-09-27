@@ -70,11 +70,15 @@ const topContentP = topContent.querySelector('p');
 const topContent2 = document.querySelector('.top-content');
 const topContentHeaderTwo = topContent2.querySelector('.text-content:nth-of-type(2) h4');
 const topContentPTwo = topContent2.querySelector('.text-content:nth-of-type(2) p');
-const mainContentImg = document.getElementById('middle-img');
+
 topContentHeader.textContent = siteContent['main-content']['features-h4'];
 topContentP.textContent = siteContent['main-content']['features-content'];
 topContentHeaderTwo.textContent = siteContent['main-content']['about-h4'];
 topContentPTwo.textContent = siteContent['main-content']['about-content'];
+
+
+//Main Content Image
+const mainContentImg = document.getElementById('middle-img');
 mainContentImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 //Main content Bottom Content
@@ -93,3 +97,18 @@ bottomContentHeaderTwo.textContent = siteContent['main-content']['product-h4'];
 bottomContentPTwo.textContent = siteContent['main-content']['product-content'];
 bottomContentHeaderThree.textContent = siteContent['main-content']['vision-h4'];
 bottomContentPThree.textContent = siteContent['main-content']['vision-content'];
+
+// Contact Section 
+const contact = document.querySelector('.contact');
+const contactHeader = contact.querySelector('h4');
+const contactPOne = contact.querySelector('p:nth-of-type(1)');
+const contactPTwo = contact.querySelector('p:nth-of-type(2)');
+const contactPThree = contact.querySelector('p:nth-of-type(3)');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+contactPOne.textContent = siteContent['contact']['address'];
+contactPTwo.textContent = siteContent['contact']['phone'];
+contactPThree.textContent = siteContent['contact']['email'];
+
+// Footer Section
+const footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
