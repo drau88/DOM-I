@@ -40,3 +40,23 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// Navigation Links
+const navFirstLink = document.querySelector('nav a:nth-of-type(1)');
+const navSecondLink = document.querySelector('nav a:nth-of-type(2)');
+const navThirdLink = document.querySelector('nav a:nth-of-type(3)');
+const navFourthLink = document.querySelector('nav a:nth-of-type(4)');
+const navFifthLink = document.querySelector('nav a:nth-of-type(5)');
+const navSixthLink = document.querySelector('nav a:nth-of-type(6)');
+navFirstLink.textContent = siteContent['nav']['nav-item-1'];
+navSecondLink.textContent = siteContent['nav']['nav-item-2'];
+navThirdLink.textContent = siteContent['nav']['nav-item-3'];
+navFourthLink.textContent = siteContent['nav']['nav-item-4'];
+navFifthLink.textContent = siteContent['nav']['nav-item-5'];
+navSixthLink.textContent = siteContent['nav']['nav-item-6'];
+
+// navSecondLink.textContent = 'Product';
+// navThirdLink.textContent = 'Vision';
+// navFourthLink.textContent = 'Features';
+// navFifthLink.textContent= 'About';
+// navSixthLink.textContent = 'Contact';
