@@ -55,8 +55,10 @@ navFourthLink.textContent = siteContent['nav']['nav-item-4'];
 navFifthLink.textContent = siteContent['nav']['nav-item-5'];
 navSixthLink.textContent = siteContent['nav']['nav-item-6'];
 
-// navSecondLink.textContent = 'Product';
-// navThirdLink.textContent = 'Vision';
-// navFourthLink.textContent = 'Features';
-// navFifthLink.textContent= 'About';
-// navSixthLink.textContent = 'Contact';
+// Header Content
+const actualHeader = document.querySelector('.cta .cta-text h1');
+const headerImage = document.getElementById('cta-img');
+const headerButton = document.querySelector('.cta .cta-text button');
+actualHeader.textContent = siteContent['cta']['h1'];
+headerImage.setAttribute('src', siteContent['cta']['img-src']);
+headerButton.textContent = siteContent['cta']['button'];
