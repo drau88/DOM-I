@@ -48,12 +48,23 @@ const navThirdLink = document.querySelector('nav a:nth-of-type(3)');
 const navFourthLink = document.querySelector('nav a:nth-of-type(4)');
 const navFifthLink = document.querySelector('nav a:nth-of-type(5)');
 const navSixthLink = document.querySelector('nav a:nth-of-type(6)');
+const appendedLink = navFirstLink.cloneNode(true);
+document.querySelector('nav').appendChild(appendedLink);
+const prependedLink = navFirstLink.cloneNode(true);
+document.querySelector('nav').prepend(prependedLink);
+const linksGeneral = document.querySelectorAll('nav a');
+const linksGeneralActual = Array.from(linksGeneral);
+
 navFirstLink.textContent = siteContent['nav']['nav-item-1'];
 navSecondLink.textContent = siteContent['nav']['nav-item-2'];
 navThirdLink.textContent = siteContent['nav']['nav-item-3'];
 navFourthLink.textContent = siteContent['nav']['nav-item-4'];
 navFifthLink.textContent = siteContent['nav']['nav-item-5'];
 navSixthLink.textContent = siteContent['nav']['nav-item-6'];
+appendedLink.textContent = 'AppendNav';
+prependedLink.textContent = 'PrependNav';
+linksGeneralActual.forEach(item => item.style.color = 'green');
+
 
 // Header Content
 const actualHeader = document.querySelector('.cta .cta-text h1');
