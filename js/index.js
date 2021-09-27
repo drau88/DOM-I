@@ -39,7 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Navigation Links
 const navFirstLink = document.querySelector('nav a:nth-of-type(1)');
@@ -62,3 +62,34 @@ const headerButton = document.querySelector('.cta .cta-text button');
 actualHeader.textContent = siteContent['cta']['h1'];
 headerImage.setAttribute('src', siteContent['cta']['img-src']);
 headerButton.textContent = siteContent['cta']['button'];
+
+// Main content Top Content and Image
+const topContent = document.querySelector('.top-content');
+const topContentHeader = topContent.querySelector('h4');
+const topContentP = topContent.querySelector('p');
+const topContent2 = document.querySelector('.top-content');
+const topContentHeaderTwo = topContent2.querySelector('.text-content:nth-of-type(2) h4');
+const topContentPTwo = topContent2.querySelector('.text-content:nth-of-type(2) p');
+const mainContentImg = document.getElementById('middle-img');
+topContentHeader.textContent = siteContent['main-content']['features-h4'];
+topContentP.textContent = siteContent['main-content']['features-content'];
+topContentHeaderTwo.textContent = siteContent['main-content']['about-h4'];
+topContentPTwo.textContent = siteContent['main-content']['about-content'];
+mainContentImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+//Main content Bottom Content
+const bottomContent = document.querySelector('.bottom-content');
+const bottomContentHeader = bottomContent.querySelector('h4');
+const bottomContentP = bottomContent.querySelector('p');
+const bottomContent2 = document.querySelector('.bottom-content');
+const bottomContentHeaderTwo = bottomContent2.querySelector('.text-content:nth-of-type(2) h4');
+const bottomContentPTwo = bottomContent2.querySelector('.text-content:nth-of-type(2) p');
+const bottomContent3 = document.querySelector('.bottom-content');
+const bottomContentHeaderThree = bottomContent3.querySelector('.text-content:nth-of-type(3) h4');
+const bottomContentPThree = bottomContent3.querySelector('.text-content:nth-of-type(3) p');
+bottomContentHeader.textContent = siteContent['main-content']['services-h4'];
+bottomContentP.textContent = siteContent['main-content']['services-content'];
+bottomContentHeaderTwo.textContent = siteContent['main-content']['product-h4'];
+bottomContentPTwo.textContent = siteContent['main-content']['product-content'];
+bottomContentHeaderThree.textContent = siteContent['main-content']['vision-h4'];
+bottomContentPThree.textContent = siteContent['main-content']['vision-content'];
